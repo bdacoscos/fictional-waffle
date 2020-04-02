@@ -2,6 +2,7 @@ import babel from "rollup-plugin-babel";
 import resolve from "@rollup/plugin-node-resolve";
 import commonjs from "@rollup/plugin-commonjs";
 import { uglify } from "rollup-plugin-uglify";
+import scss from "rollup-plugin-scss";
 
 export default {
   input: "src/main.js",
@@ -11,6 +12,7 @@ export default {
   },
   external: ["react"],
   plugins: [
+    scss(),
     resolve(),
     babel({
       exclude: "node_modules/**"
