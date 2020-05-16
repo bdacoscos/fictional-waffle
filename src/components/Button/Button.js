@@ -1,4 +1,5 @@
 import React from "react";
+import "../../../dist/bundle.min.css"
 
 const Button = props => {
   return (
@@ -8,7 +9,7 @@ const Button = props => {
       alt={props.altText}
       onClick={props.onClick}
     >
-      <span>{props.buttonText}</span>
+      <span>&hearts;{' '} {props.buttonText}</span>
     </button>
   );
 };
