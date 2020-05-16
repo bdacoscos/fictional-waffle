@@ -14,7 +14,7 @@ export default {
   external: ["react"],
   plugins: [
     // scss(),
-    postcss(),
+    postcss({ extract: true }),
     resolve(),
     babel({
       exclude: "node_modules/**"
