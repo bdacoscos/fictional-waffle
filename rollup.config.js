@@ -12,7 +12,6 @@ export default {
   },
   external: ["react"],
   plugins: [
-    // scss(),
     postcss(),
     resolve(),
     babel({

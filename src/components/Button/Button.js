@@ -1,5 +1,5 @@
 import React from "react";
-import "./styles.css";
+import "./style.css";
 
 const Button = props => {
   return (
@@ -9,7 +9,7 @@ const Button = props => {
       alt={props.altText}
       onClick={props.onClick}
     >
-      <span>Text: {props.buttonText}</span>
+      <span>{props.buttonText}</span>
     </button>
   );
 };
