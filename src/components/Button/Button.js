@@ -1,5 +1,4 @@
 import React from "react";
-import "../../../dist/bundle.min.css"
 
 const Button = props => {
   return (
