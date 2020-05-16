@@ -9,7 +9,7 @@ const Button = props => {
       alt={props.altText}
       onClick={props.onClick}
     >
-      <span>{props.buttonText}</span>
+      <span>Text: {props.buttonText}</span>
     </button>
   );
 };
