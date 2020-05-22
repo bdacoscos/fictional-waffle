@@ -10,7 +10,7 @@ const Card = (props) => {
       <div className={props.altClass || "waffle--card"}>
         <div className="waffle--card-image-wrapper">
           <img
-            className={props.altClass || "waffle--card-image"}
+            className="waffle--card-image"
             src={props.imageSource}
             alt={props.imageAlt}
           />
@@ -22,7 +22,6 @@ const Card = (props) => {
             Read More...
           </a>
         </div>
-
         <div className="waffle--card-tags-wrapper">
           {props.tags.map((tag) => (
             <span className="waffle--card-tag">{tag}</span>
