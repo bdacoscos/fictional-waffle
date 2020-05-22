@@ -7,28 +7,30 @@ const Card = (props) => {
 
   return (
     <>
-      <div className="card">
-        <div className="card-image-wrapper">
+      <div className={props.altClass || "waffle--card"}>
+        <div className="waffle--card-image-wrapper">
           <img
-            className="card-image"
+            className="waffle--card-image"
             src={props.imageSource}
             alt={props.imageAlt}
           />
         </div>
-        <div className="card-title">{props.title}</div>
-        <div className="card-subtitle">{props.subtitle}</div>
-        <div className="detail-page-link">
-          <a href={props.detailPageLink}>Read More...</a>
+        <div className="waffle--card-title">{props.title}</div>
+        <div className="waffle--card-subtitle">{props.subtitle}</div>
+        <div className="waffle--internal-links-wrapper">
+          <a href={props.detailPageLink} className="waffle--internal-link">
+            Read More...
+          </a>
         </div>
-        <div>
+        <div className="waffle--card-tags-wrapper">
           {props.tags.map((tag) => (
-            <span>{tag}</span>
+            <span className="waffle--card-tag">{tag}</span>
           ))}
         </div>
-        <div className="card-links">
+        <div className="waffle--card-links-wrapper">
           {Object.entries(cardLinksObj).map(([key, value]) => (
-            <div>
-              <a href={value} target="_blank">
+            <div className="waffle--card-link-wrapper">
+              <a href={value} target="_blank" className="waffle--card-link">
                 {key}
               </a>
             </div>

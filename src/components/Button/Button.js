@@ -3,14 +3,16 @@ import "./style.css";
 
 const Button = props => {
   return (
-    <button
-      className="button"
-      type="button"
-      alt={props.altText}
-      onClick={props.onClick}
-    >
-      <span>&hearts;{' '} {props.buttonText}</span>
-    </button>
+    <>
+      <button
+        className={props.altClass || 'waffle--button'}
+        type="button"
+        alt={props.altText}
+        onClick={props.onClick}
+      >
+        <span className>{props.buttonText}</span>
+      </button>
+    </>
   );
 };
 
