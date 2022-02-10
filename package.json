@@ -35,7 +35,7 @@
     "@storybook/addons": "^5.3.18",
     "@storybook/react": "^5.3.18",
     "babel-loader": "^8.1.0",
-    "node-sass": "^4.13.1",
+    "node-sass": "^7.0.0",
     "rollup": "^2.2.0",
     "rollup-plugin-babel": "^4.4.0",
     "rollup-plugin-postcss": "^3.1.1",
